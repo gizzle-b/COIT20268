@@ -1,0 +1,376 @@
+body {
+	font-family: calibri, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img.background{
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+			
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning A fixed element is positioned relative to the viewport, it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used.*/
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#wrapper {
+	width: 1024px;
+	margin: 0 auto -4em;
+	height: auto;
+	height: 100%;
+	
+	position: relative;
+	
+	-moz-box-shadow: 0 0 20px black; 
+	-webkit-box-shadow: 0 0 20px black; 
+	box-shadow: 0 0 20px black;
+}
+
+
+
+/* header - acronym logo & logo*/
+header {
+	height: 100px;
+}
+
+/* nav - search box*/
+input[type=search]{
+	background: #ededed url (images/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 150px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus{
+	width: 130px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba (109,207,246,.5);
+	box-shadow: 0 0 5px rgba (109,207,246,.5);
+}
+
+/* showcase images */
+nav img.vehicle1{
+	margin: 0 .1em 0 .6em;
+}
+	
+nav img.vehicle2{
+	margin: 0 .1em 0 0;
+}
+
+/* updates and tweets + about us left nav*/
+aside {
+	float: left;
+	width:224px;
+}
+
+/* welcome message + about us*/
+article {
+	float: left;
+	width:517px;
+	margin-left: 10px;
+}
+
+article p{
+	text-align: justify;
+}
+
+/* map */
+article img{
+	max-width:100%;
+	height:auto;
+}
+
+/* about us image */
+.nav-img{
+	margin: 1em 1em 0 1em;
+}
+
+/* about us text area */
+.about_us{
+	margin: 1em 1em 0 1em;
+}
+
+/* promos and events */
+sidebar{
+	float: right;
+	width:224px;
+	background-color: #333;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+sidebar h1{
+	padding-left: .5em;
+	font-size: 100%;
+}
+
+sidebar p{
+	padding-top: 0em;
+	padding-left: 1.5em;
+	font-size: 75%;
+}
+
+sidebar img{
+	padding-left: 1em;
+}
+
+/* footer*/
+footer{
+	clear: both;
+	border-color: #333;
+	background-color: #333;
+	margin-bottom: 0;
+}
+
+footer p{
+	text-align: center;
+	padding: .5em 1em;
+	color: #ffffff;
+}
+
+footer a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+footer p a:hover{
+	text-decoration: none;
+	color: #C1607A;
+}
+
+/* about us - left nav */
+aside.left {
+	float: left;
+	border-color: #333;
+	border-radius: 10px;
+	background-color: #333;
+	width:210px;
+	text-indent: 1em;
+	margin: 1em 1em 0 2em;
+}
+
+aside.left a{
+	text-decoration: none;
+	text-indent: 1em;
+	color: #ffffff;
+	font-size: 90%;
+}
+
+aside.left p a:hover{
+	color: #C1607A;
+}
+
+/*hours and fees, private tours and form*/
+table {
+	border: solid 1px black; 
+	border-collapse: collapse;
+	width:517px;
+}
+
+th {
+	border: solid 1px black; 
+	padding: 10px;
+	background-color: #333; 
+	color: #fff;
+}
+
+th, td {
+	border: solid 1px black;
+	padding: 5px;
+}
+
+/* frequently asked question page text area setting */
+article.faq{
+	width:617px;
+	text-align: center;
+	margin-left: 150px;
+}
+
+/* copyright page text area setting */
+.copyright {
+	width:617px;
+	text-align: center;
+	margin-left: 150px;
+}
+
+/*for 500px or less*/
+@media screen and (max-width:500px) {
+	#wrapper{
+		width:94%;
+		height:auto;
+	}
+	
+	header, footer {
+		padding:1% 4%;
+	}
+	
+	.aclogo{
+		width:20%;
+		float:left;
+	}
+	
+	.logo{
+		width:80%;
+		height:80%;
+		float:left;
+		padding-top:2%;
+	}
+
+
+	/* showcase image 1 - Soviet Jet Train*/
+	nav img.vehicle1{
+		max-width:100%;
+		height:auto;
+		float:left;
+		clear:both;
+		margin: 0 .5em 0 .5em;
+	}
+	
+	/* showcase image 2 - Fun Bi-Wheel Fun Car*/
+	nav img.vehicle2{
+		display:none;
+	}
+	
+	/* search box */
+	input[type=search]{
+		float:left;
+		clear:both;
+		width: 50%;
+		margin: 1em 5em 1em 7em;
+	}
+	
+	input[type=search]:focus{
+		width: 52%;
+		margin: 1em 5em 1em 7em;
+	}
+	
+	/* twitter feed removed */
+	aside{
+		display:none;
+	}
+	
+	/* article elements - welcome message, map*/
+	article{
+		width:80%;
+		height:auto;
+		clear:both;
+		float:left;
+		padding:1% 4%;
+		margin: 0 0 .5em 2em;
+	}
+	
+	/* promos and events */
+	sidebar{
+		clear:both;
+		width:80%;
+		float:left;
+		padding:1% 4%;
+		margin: 0 0 .5em 2em;
+		background-color: transparent;
+		color: #000;
+	}
+	
+	/* about us left navigation */
+	aside.left {
+		float: left;
+		clear:both;
+		width:82%;	
+		display:inline-block;
+		position:relative;
+		text-align:center;
+		border-radius: 0px;
+		margin: 0 0 .5em 2.5em;
+	}
+	
+	aside.left a{
+		margin:0;
+	}
+
+	/* about us image */
+	.nav-img{
+		max-width:100%;
+		height:auto;
+		margin: 1em 1em 0 0;
+	}
+	
+	/* about us text area */
+	.about_us{
+		margin: 1em 1em 0 1em;
+	}
+
+	/*hours and fees, private tours and form*/
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		width: auto;
+	}
+	
+	table h1{
+		display: inline;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid transparent; 
+		position: relative;
+		padding-left: 10%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/* Label the data */
+	td:nth-of-type(1):before { content: }
+
+	/* frequently asked question page text area setting */
+	article.faq{
+		float:left;
+		clear:both;
+		width:90%;
+		height:auto;
+		margin: 1em 1em 0 0;
+	}
+	
+	/* copyright page text area setting */
+	.copyright {
+		float:left;
+		clear:both;
+		width:90%;
+		height:auto;
+		margin: 1em 1em 0 0;
+		position: relative;
+	}
+	
+}

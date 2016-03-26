@@ -1,0 +1,94 @@
+/* Current Page Indicator*/
+.current {
+	font-weight: bold;
+	width:100%;
+	overflow:hidden;
+	margin: 2px auto;
+	position:relative;
+	height: auto;
+}
+
+/* nav - nav bar*/
+nav{
+	width:100%;
+	overflow:visible;
+	margin: 5px auto;
+	position:relative;
+	height: auto;
+}
+
+nav ul li{
+	list-style:none;
+}
+
+nav li {
+	display:inline-block;
+	float:left;
+	width:12.5%;
+	background-color:#C1607A;
+	text-align:center;
+	border-right: 1px solid white;
+	position: relative;
+}
+
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav li:hover{
+	color: #ffffff;
+	background-color: #333;
+}
+
+nav li:hover ul{
+	visibility:visible;
+}
+
+/*drop down menu*/
+nav li ul li{
+	float: none;
+	width: 150px;
+	text-align: center;
+	padding-left: 5px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid transparent;
+}
+
+nav li ul{
+	top:21px;
+	left:0;
+	visibility: hidden;
+	position:absolute;
+}
+
+nav li: hover ul{
+	visibility:visible;
+}
+
+/*for 500px or less*/
+@media screen and (max-width:500px) {
+
+/* nav - nav bar*/
+nav li {
+	float:left;
+	clear:both;
+	width:90%;
+	position:relative;
+	background-color:#C1607A;
+	text-align:center;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid white;
+}
+
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* nav bar - drop down menu */
+nav li:hover ul{
+	visibility:hidden;
+}
+
+}
