@@ -5,9 +5,13 @@ Task Description:
 
 Create a website with HTML5 and CSS3 as specified for the course. The website should demonstrate functionality and interactivity between the components rendered and the end user. The components should incorporate text, images, colour and if required, media elements.
 
+Note:
+
+Responsiveness of the website is only made applicable to Google Chrome and Mozilla Firefox browsers.
+
 Learning Outcome:
 
-1. Develop web pages tailored for a rangle of screen resolutions, incorporating text, images, audio and video.
+1. Develop web pages tailored for a range of screen resolutions, incorporating text, images, audio and video.
 2. Apply principles of progressive enhancement to optimise content for the limited memory and processing power of mobile devices, whilst simultaneously delivering a richer experience on non-mobile devices.
 
 Specification
