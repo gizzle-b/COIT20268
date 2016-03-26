@@ -17,6 +17,7 @@ Design and develop a website. The idea is to provide information to tourists vis
 Resources
 
 Resources such as images and details of opening hours can be found in ProResource.ZIP. The content of the ZIP file is:
+
 1. Three folders named Robots, DaVinci and Vehicles. Each folder contains images relating to the different types of technology indicated by the name of its folder.
 2. A text file Artefact_List.txt contains the names of the artefact corresponding to each of the image from each folder. You need to use these names as the official description of the artefact on your web site.
 3. A text file Time_Fees.txt containing the time-table of opening hours and entrance fees to the museum.
